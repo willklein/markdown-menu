@@ -1,0 +1,24 @@
+.github-markdown-contents-btn {
+  margin: -4px 0;
+}
+
+.github-markdown-contents-modal-holder {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  z-index: 21;
+}
+
+#github-markdown-contents-container {
+  padding: 10px;
+  line-height: 1.6;
+  width: auto;
+}
+
+#github-markdown-contents-container ul {
+  list-style-type: none;
+}
+
+#github-markdown-contents-container ul ul {
+  padding-left: 1em;
+}

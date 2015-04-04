@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "GitHub Markdown Contents",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Browser extension for adding Table of Contents to GitHub's Markdown viewer.",
+    "description": "The description of the application"
+  }
+}
