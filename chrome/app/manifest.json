@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -9,26 +9,26 @@
   },
   "default_locale": "en",
   "background": {
+    "persistent": false,
     "scripts": [
-      "scripts/chromereload.js",
       "scripts/background.js"
     ]
   },
-  "options_page": "options.html",
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://github.com/*/*"
       ],
       "js": [
         "scripts/contentscript.js"
       ],
       "css": [
         "styles/contentstyle.css"
-      ],
-      "run_at": "document_end",
-      "all_frames": false
+      ]
     }
+  ],
+  "permissions": [
+    "https://github.com/*/*",
+    "webNavigation"
   ]
 }

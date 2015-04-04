@@ -59,9 +59,24 @@ for (i = 0; i < links.length; ++i) {
 while (currentDepth--) {
   toc += '</ul>';
 }
+var fileView = false;
+var target = document.querySelectorAll('#readme > h3')[0];
 
-var link = '<span class="select-menu js-menu-container js-select-menu"><span class="github-markdown-contents-btn js-select-menu js-menu-target btn btn-sm tooltipped-s right" role="button" aria-label="Show Table of Contents"><span class="octicon octicon-three-bars"></span></span><div class="select-menu-modal-holder github-markdown-contents-modal-holder js-menu-content js-navigation-container"><div id="github-markdown-contents-container" class="select-menu-modal"></div></div></span>';
-var title = document.querySelectorAll('#readme > h3')[0];
-title.innerHTML += link;
+if (!target) {
+  target = document.querySelectorAll('.file-actions')[0];
+  fileView = true;
+}
 
-document.getElementById('github-markdown-contents-container').innerHTML += toc;
+if (target) {
+  var oldLink = document.querySelectorAll('.github-markdown-contents')[0];
+
+  if (oldLink) {
+    console.log('removed old link');
+    oldLink.parentNode.removeChild(oldLink);
+  }
+
+  var link = '<span class="github-markdown-contents select-menu js-menu-container js-select-menu"><span class="github-markdown-contents-btn js-select-menu js-menu-target btn btn-sm tooltipped-s' + (fileView ? '' : ' right') + '" role="button" aria-label="Show Table of Contents"><span class="octicon octicon-three-bars"></span></span><div class="select-menu-modal-holder github-markdown-contents-modal-holder js-menu-content js-navigation-container"><div id="github-markdown-contents-container" class="select-menu-modal"></div></div></span>';
+  target.innerHTML += link;
+
+  document.getElementById('github-markdown-contents-container').innerHTML += toc;
+}

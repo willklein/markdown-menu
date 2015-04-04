@@ -1,7 +1,13 @@
 'use strict';
 
-chrome.runtime.onInstalled.addListener(function (details) {
-  console.log('previousVersion', details.previousVersion);
-});
+var previousTimestamp;
 
-console.log('\'Allo \'Allo! Event Page');
+chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
+  if (previousTimestamp && details.timeStamp - previousTimestamp < 1000) {
+    chrome.tabs.executeScript(details.tabId, {
+      file: 'scripts/contentscript.js'
+    });
+  }
+
+  previousTimestamp = details.timeStamp;
+});
