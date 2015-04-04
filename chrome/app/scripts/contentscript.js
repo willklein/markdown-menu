@@ -59,6 +59,7 @@ for (i = 0; i < links.length; ++i) {
 while (currentDepth--) {
   toc += '</ul>';
 }
+
 var fileView = false;
 var target = document.querySelectorAll('#readme > h3')[0];
 
@@ -71,7 +72,6 @@ if (target) {
   var oldLink = document.querySelectorAll('.github-markdown-contents')[0];
 
   if (oldLink) {
-    console.log('removed old link');
     oldLink.parentNode.removeChild(oldLink);
   }
 

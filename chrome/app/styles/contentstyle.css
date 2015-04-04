@@ -4,14 +4,18 @@
 
 .github-markdown-contents-modal-holder {
   position: absolute;
-  top: 30px;
   right: 10px;
+  top: 30px;
   z-index: 21;
 }
 
+.file-actions .github-markdown-contents-modal-holder {
+  top: 33px;
+}
+
 #github-markdown-contents-container {
-  padding: 10px;
   line-height: 1.6;
+  padding: 10px;
   width: auto;
 }
 
@@ -21,4 +25,9 @@
 
 #github-markdown-contents-container ul ul {
   padding-left: 1em;
+}
+
+#github-markdown-contents-container a {
+  color: #4183c4;
+  font-weight: bold;
 }
