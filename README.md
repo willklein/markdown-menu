@@ -10,12 +10,14 @@ Click on the three-bar icon at the top of any Markdown file to view the menu. Cl
 
 [Chrome WebStore](https://chrome.google.com/webstore/detail/github-markdown-menu/jekgocfoijmbgcjejohdgmojaejofdpo)
 
+### For Developers
+
 You can also setup the dev version:
 
-- clone the repo
-- open the [extensions page](chrome://extensions)
+- from the CLI: git clone https://github.com/willklein/github-markdown-menu.git
+- open the extensions page: chrome://extensions
 - enable Developer mode
-- click Load unpacked extension, choosing the chrome/app directory
+- click Load unpacked extension, selecting the chrome/app directory
 
 ## Supported Browsers
 
@@ -31,7 +33,7 @@ I have experience developing Chrome extensions, so that was easiest to start wit
 
 ## Help, Issues and Support
 
-Please post questions, issues, and suggestions using [GitHub Issues](https://github.com/willklein/github-markdown-menu/issues)
+Ask questions, post issues, and share suggestions using [GitHub Issues](https://github.com/willklein/github-markdown-menu/issues). You can also tweet me [@WillsLab](https://twitter.com/willslab).
 
 ## Permissions
 
@@ -64,6 +66,10 @@ Post or reply to an [issue](https://github.com/willklein/github-markdown-menu/is
 ### Dependencies
 
 The Chrome extension was generated using [Yeoman](http://yeoman.io) and the [Chrome Extension generator](https://github.com/yeoman/generator-chrome-extension). [Grunt](http://gruntjs.com/) is used for building and packaging the extension. There are no runtime dependencies.
+
+## About
+
+I work with several well-documented repos, with 500+ line READMEs. I'm thankful for the documentation, but it's hard to parse and find what I'm looking for. I built Markdown Menu to scratch this itch; I hope it might help others too.
 
 ## License
 
