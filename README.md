@@ -37,12 +37,12 @@ Ask questions, post issues, and share suggestions using [GitHub Issues](https://
 
 ## Permissions
 
-In Chrome, you'll be approving the following permissions:
+In Chrome, this extension requests the following permissions:
 - Read and change your data on github.com
-> This extension is scoped and enabled only when accessing https://github.com/\*. This is necessary to look for Markdown headers and add the navigation menu.
+> This extension is scoped and enabled only when accessing https://github.com/\*. This extension looks for Markdown headers, generates a navigation menu and adds it to Markdown views on GitHub.
 
 - Read your browsing history
-> For this extension to work across page navigations within github.com, permissions are necessary to use chrome.webNavigation.onHistoryStateUpdated. This lets the extension hook into page navigations and trigger without full page refreshes. Seems odd this is necessary. If you'd like to help improve the extension to work without this, be my guest!
+> For this extension to work across page navigations within github.com, permissions are necessary to use chrome.webNavigation.onHistoryStateUpdated. This lets the extension hook into page navigations and trigger without full page refreshes.
 
 ### More on Permissions
 
