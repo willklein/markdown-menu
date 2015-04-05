@@ -6,6 +6,12 @@ GitHub readmes and Markdown documents don't always include a table of contents. 
 
 Click on the three-bar icon at the top of any Markdown file to view the menu. Click on a link to scroll to that section of the document. That's it!
 
+README example:
+![](screenshot-readme-view-free-for-dev.png)
+
+Markdown view example:
+![](screenshot-markdown-view-primer.png)
+
 ## Install
 
 [Chrome WebStore](https://chrome.google.com/webstore/detail/github-markdown-menu/jekgocfoijmbgcjejohdgmojaejofdpo)
