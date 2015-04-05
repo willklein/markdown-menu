@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "GitHub Markdown Contents",
+    "message": "GitHub Markdown Menu",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "Browser extension for adding Table of Contents to GitHub's Markdown viewer.",
+    "message": "Adds a navigation menu to any readme or Markdown file in GitHub.",
     "description": "The description of the application"
   }
 }

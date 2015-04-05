@@ -282,7 +282,7 @@ module.exports = function (grunt) {
         options: {
           archive: function() {
             var manifest = grunt.file.readJSON('app/manifest.json');
-            return 'package/GitHub Markdown Contents-' + manifest.version + '.zip';
+            return 'package/GitHub Markdown Menu-' + manifest.version + '.zip';
           }
         },
         files: [{
