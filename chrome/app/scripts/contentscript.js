@@ -91,5 +91,8 @@ var insertContents = function(contents) {
 };
 
 var links = getLinks();
-var contents = buildContents(links);
-insertContents(contents);
+
+if (links.length) {
+  var contents = buildContents(links);
+  insertContents(contents);
+}
