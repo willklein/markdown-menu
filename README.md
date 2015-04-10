@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/willklein/github-markdown-menu.png?label=ready&title=Ready)](https://waffle.io/willklein/github-markdown-menu)
 # GitHub Markdown Menu
 
 > Browser extension that adds a navigation menu to any readme or Markdown file in GitHub.
