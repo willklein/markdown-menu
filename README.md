@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/willklein/github-markdown-menu.png?label=ready&title=Ready)](https://waffle.io/willklein/github-markdown-menu)
 # GitHub Markdown Menu
 
 > Browser extension that adds a navigation menu to any readme or Markdown file in GitHub.
@@ -40,7 +39,7 @@ I have experience developing Chrome extensions, so that was easiest to start wit
 
 ## Help, Issues and Support
 
-Ask questions, post issues, and share suggestions using [GitHub Issues](https://github.com/willklein/github-markdown-menu/issues). You can also tweet me [@WillsLab](https://twitter.com/willslab).
+Ask questions, post issues, and share suggestions using [Waffle](https://waffle.io/willklein/github-markdown-menu). Waffle is a kanban board backed by GitHub Issues. You can also tweet me [@WillsLab](https://twitter.com/willslab).
 
 ## Permissions
 
@@ -59,9 +58,9 @@ I've listed the specific reasons for each permission to explain why they are nee
 
 ## Contribute
 
-Pull requests welcome. :smile:
+On-going development & open issues are tracked using Waffle: [![Stories in Ready](https://badge.waffle.io/willklein/github-markdown-menu.png?label=ready&title=Ready)](https://waffle.io/willklein/github-markdown-menu)
 
-Post or reply to an [issue](https://github.com/willklein/github-markdown-menu/issues) for whatever you'd like to work on. I'll happily work with you to make your efforts successful!
+Let me know what you're hacking [@WillsLab](https://twitter.com/willslab). I'll happily work with you to make your efforts successful!
 
 ### Guidelines
 
