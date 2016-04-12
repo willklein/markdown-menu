@@ -1,5 +1,6 @@
-.github-markdown-contents-btn {
-  margin: -4px 0;
+.btn.github-markdown-contents-btn {
+  margin: -5px 0;
+  padding: 5px 10px 0;
 }
 
 .github-markdown-contents-modal-holder {
