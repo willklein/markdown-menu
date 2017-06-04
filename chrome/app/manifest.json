@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*/*"
+        "https://github.com/*/*",
+        "https://github.ibm.com/*/*"
       ],
       "js": [
         "scripts/contentscript.js"
@@ -29,6 +30,7 @@
   ],
   "permissions": [
     "https://github.com/*/*",
+    "https://github.ibm.com/*/*",
     "webNavigation"
   ]
 }
