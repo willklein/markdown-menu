@@ -20,6 +20,10 @@
   width: auto;
 }
 
+.github-markdown-contents-wiki {
+  margin-bottom: 10px;
+}
+
 #github-markdown-contents-container ul {
   list-style-type: none;
 }
@@ -30,5 +34,4 @@
 
 #github-markdown-contents-container a {
   color: #4183c4;
-  font-weight: bold;
 }

@@ -2,9 +2,19 @@
 
 var threeBarSvg = '<svg height="16" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M11.41 9H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1z m0-4H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1zM0.59 11h10.81c0.59 0 0.59 0.41 0.59 1s0 1-0.59 1H0.59c-0.59 0-0.59-0.41-0.59-1s0-1 0.59-1z" /></svg>';
 
+const isRepo = () => /^\/[^/]+\/[^/]+/.test(window.location.pathname)
+const getRepoPath = () => window.location.pathname.replace(/^\/[^/]+\/[^/]+/, '')
+const isWikiPage = () => isRepo() && /^\/wiki(\/.*)?$/.test(getRepoPath())
+
 var getLinks = function() {
   var header, tag, headerLevelStr, depth;
-  var headers = document.querySelectorAll('article.markdown-body h1, article.markdown-body h2, article.markdown-body h3, article.markdown-body h4, article.markdown-body h5, article.markdown-body h6');
+  var parent = 'article.markdown-body'
+
+  if (isWikiPage()){
+    parent = '#wiki-body .markdown-body'
+  }
+
+  var headers = document.querySelectorAll(`${parent} h1, ${parent} h2, ${parent} h3, ${parent} h4, ${parent} h5, ${parent} h6`);
   var links = [];
 
   for (var i = 0; i < headers.length; ++i) {
@@ -69,6 +79,25 @@ var buildContents = function(links) {
   return contents;
 };
 
+var insertContentsWikiPage = function(contents) {
+  var markdownTarget = document.querySelector('#wiki-rightbar');
+
+  if (!markdownTarget) {
+    return false;
+  }
+
+  var oldLink = document.querySelectorAll('.github-markdown-contents-wiki')[0];
+
+  if (oldLink) {
+    oldLink.parentNode.removeChild(oldLink);
+  }
+
+  var node = document.createElement('div');
+  node.innerHTML = '<div class="github-markdown-contents-wiki readability-sidebar box box-small"><label>Table of Contents</label><div class=""><div id="github-markdown-contents-container" >' + contents + '</div></div></div>';
+  markdownTarget.insertBefore(node.firstChild, markdownTarget.childNodes[2])
+
+};
+
 var insertContents = function(contents) {
   var fileView = false;
   var readmeTarget = document.querySelectorAll('#readme > h3')[0];
@@ -96,5 +125,10 @@ var links = getLinks();
 
 if (links.length) {
   var contents = buildContents(links);
-  insertContents(contents);
+
+  if ( isWikiPage() ){
+    insertContentsWikiPage(contents);
+  }else{
+    insertContents(contents);
+  }
 }
