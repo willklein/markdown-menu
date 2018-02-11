@@ -157,18 +157,6 @@ module.exports = function (grunt) {
       css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
-    // The following *-min tasks produce minifies files in the dist folder
-    imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/images',
-          src: '{,*/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.dist %>/images'
-        }]
-      }
-    },
-
     svgmin: {
       dist: {
         files: [{
@@ -236,7 +224,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.{webp,gif}',
+            'images/{,*/}*.{webp,gif,png}',
             '{,*/}*.html',
             'styles/{,*/}*.css',
             'styles/fonts/{,*/}*.*',
@@ -251,7 +239,6 @@ module.exports = function (grunt) {
       chrome: [
       ],
       dist: [
-        'imagemin',
         'svgmin'
       ],
       test: [
