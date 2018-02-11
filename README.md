@@ -1,5 +1,7 @@
 # GitHub Markdown Menu
 
+[![Join the chat at https://gitter.im/willklein/github-markdown-menu](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/willklein/github-markdown-menu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > Browser extension that adds a navigation menu to any readme or Markdown file in GitHub.
 
 GitHub readmes and Markdown documents don't always include a table of contents. Well-documented repos have longer documents that can be difficult to navigate. This extension will automagically generate and add navigation menu with a table of contents.
