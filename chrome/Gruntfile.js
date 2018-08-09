@@ -249,7 +249,7 @@ module.exports = function (grunt) {
     chromeManifest: {
       dist: {
         options: {
-          buildnumber: true,
+          buildnumber: false,
           indentSize: 2,
           background: {
             target: 'scripts/background.js',
