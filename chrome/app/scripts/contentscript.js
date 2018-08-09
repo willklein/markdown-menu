@@ -71,7 +71,7 @@ var buildContents = function(links) {
 
 var insertContents = function(contents) {
   var fileView = false;
-  var readmeTarget = document.querySelectorAll('#readme > h3')[0];
+  var readmeTarget = document.querySelectorAll('#readme > .Box-header > h3')[0];
   var markdownTarget;
 
   if (!readmeTarget) {
@@ -89,7 +89,11 @@ var insertContents = function(contents) {
   }
 
   var link = '<span class="github-markdown-contents select-menu js-menu-container js-select-menu"><span class="github-markdown-contents-btn js-select-menu js-menu-target btn btn-sm tooltipped-s' + (markdownTarget ? '' : ' float-right') + '" role="button" aria-label="Show Table of Contents">' + threeBarSvg + '</span><div class="select-menu-modal-holder github-markdown-contents-modal-holder js-menu-content js-navigation-container"><div id="github-markdown-contents-container" class="select-menu-modal">' + contents + '</div></div></span>';
-  (readmeTarget || markdownTarget).innerHTML += link;
+  if (readmeTarget) {
+    readmeTarget.parentNode.innerHTML += link;
+  } else {
+    markdownTarget.innerHTML += link;
+  }
 };
 
 var links = getLinks();
