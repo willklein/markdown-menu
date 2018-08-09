@@ -79,4 +79,4 @@ I work with several well-documented repos, with 500+ line READMEs. I'm thankful 
 
 ## License
 
-[MIT](http://mit-license.org/) © [Will Klein](http://willkle.in)
+[MIT](http://mit-license.org/) © [Will Klein](http://willklein.co)
