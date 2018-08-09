@@ -1,6 +1,6 @@
-# GitHub Markdown Menu
+# Markdown Menu for GitHub
 
-> Browser extension that adds a navigation menu to any readme or Markdown file in GitHub.
+> Browser extension that adds a navigation menu to any readme or Markdown file on GitHub.
 
 GitHub readmes and Markdown documents don't always include a table of contents. Well-documented repos have longer documents that can be difficult to navigate. This extension will automagically generate and add navigation menu with a table of contents.
 
@@ -20,7 +20,7 @@ Markdown view example:
 
 You can also setup the dev version:
 
-- from the CLI: git clone https://github.com/willklein/github-markdown-menu.git
+- from the CLI: git clone https://github.com/willklein/markdown-menu.git
 - open the extensions page: chrome://extensions
 - enable Developer mode
 - click Load unpacked extension, selecting the chrome/app directory
@@ -39,7 +39,7 @@ I have experience developing Chrome extensions, so that was easiest to start wit
 
 ## Help, Issues and Support
 
-Ask questions, post issues, and share suggestions using [Waffle](https://waffle.io/willklein/github-markdown-menu). Waffle is a kanban board backed by GitHub Issues. You can also tweet me [@WillsLab](https://twitter.com/willslab).
+Ask questions, post issues, and share suggestions using [Waffle](https://waffle.io/willklein/markdown-menu). Waffle is a kanban board backed by GitHub Issues. You can also tweet me [@WillsLab](https://twitter.com/willslab).
 
 ## Permissions
 
@@ -58,7 +58,7 @@ I've listed the specific reasons for each permission to explain why they are nee
 
 ## Contribute
 
-On-going development & open issues are tracked using Waffle: [![Stories in Ready](https://badge.waffle.io/willklein/github-markdown-menu.png?label=ready&title=Ready)](https://waffle.io/willklein/github-markdown-menu)
+On-going development & open issues are tracked using Waffle: [![Stories in Ready](https://badge.waffle.io/willklein/markdown-menu.png?label=ready&title=Ready)](https://waffle.io/willklein/markdown-menu)
 
 Let me know what you're hacking [@WillsLab](https://twitter.com/willslab). I'll happily work with you to make your efforts successful!
 
