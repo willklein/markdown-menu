@@ -62,11 +62,11 @@ var buildContents = function(links) {
     contents += '<li><a href="' + node.hash + '">' + node.text + '</a></li>';
   }
 
-  while (currentDepth--) {
-    contents += '</ul>';
+  while (--currentDepth) {
+    contents += '</ul></li>';
   }
 
-  return contents;
+  return contents + '</ul>';
 };
 
 var insertContents = function(contents) {
